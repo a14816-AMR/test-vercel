@@ -1,0 +1,31 @@
+/* Stats.module.css */
+
+.section {
+  padding: 64px 0;
+  border-top: 1px solid #1a1a2a;
+  border-bottom: 1px solid #1a1a2a;
+}
+
+.item {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}

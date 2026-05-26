@@ -1,0 +1,159 @@
+/* Plans.module.css */
+
+.section {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 70px;
+}
+
+.title { margin-bottom: 16px; }
+
+.sub {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border2);
+  border-radius: 24px;
+  padding: 36px 32px;
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+.card:hover { transform: translateY(-6px); }
+.card:focus-visible { box-shadow: 0 0 0 3px var(--blue); }
+
+.selected { border-color: var(--accent); }
+
+/* Popular badge */
+.popular::before {
+  content: 'Mais Popular';
+  position: absolute;
+  top: -14px; left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 18px;
+  border-radius: 9999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Selected dot */
+.selectedDot {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  color: #000;
+  font-weight: 700;
+}
+
+/* Plan header */
+.planIcon { font-size: 36px; margin-bottom: 16px; }
+
+.planLabel {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+
+.per { font-size: 15px; color: var(--text-muted); }
+
+.washes {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 24px;
+}
+
+/* Feature list */
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.checkIcon { color: var(--teal); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.xIcon     { color: var(--text-faint); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+
+.featureText { font-size: 14px; color: #ccc; line-height: 1.4; }
+.excluded .featureText { color: var(--text-faint); }
+
+/* CTA button */
+.cta {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s;
+  letter-spacing: 0.03em;
+}
+
+.cta:hover { opacity: 0.88; }
+
+/* Footnote */
+.footnote {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #555;
+}

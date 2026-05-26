@@ -1,0 +1,88 @@
+/* Contact.module.css */
+
+.section { padding: 100px 0; }
+
+.header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.title  { margin-bottom: 16px; }
+.sub    { font-size: 16px; color: var(--text-secondary); }
+
+/* Card */
+.card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 48px 40px;
+}
+
+/* Form */
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.field { margin-bottom: 16px; }
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.submit {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.privacy {
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  margin-top: 16px;
+}
+
+.privacyLink { color: var(--blue); cursor: pointer; }
+
+/* Success state */
+.success {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.successIcon  { font-size: 56px; margin-bottom: 20px; }
+.successTitle { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+
+.successText {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 400px;
+  margin: 0 auto 28px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card   { padding: 32px 24px; }
+  .row2   { grid-template-columns: 1fr; }
+}
